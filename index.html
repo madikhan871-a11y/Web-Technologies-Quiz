@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quiz Master</h1>
+        <p>Test Your Knowledge!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#quiz">Start Quiz</a>
+        <a href="#about">About</a>
+        <button id="themeBtn">Dark Mode</button>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Our Quiz</h2>
+            <p>Answer the questions and check your knowledge.</p>
+            <button id="startBtn">Start Quiz</button>
+        </section>
+
+        <section id="quiz" class="quiz-box" hidden>
+            <div class="quiz-info">
+                <p id="questionCount">Question 1 of 5</p>
+                <p>Time: <span id="timer">30</span> sec</p>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="question">Question will appear here</h2>
+
+            <div id="answers"></div>
+
+            <p id="feedback"></p>
+
+            <button id="nextBtn" disabled>Next Question</button>
+        </section>
+
+        <section id="result" class="result-box" hidden>
+            <h2>Quiz Completed!</h2>
+            <p id="score"></p>
+            <button id="restartBtn">Try Again</button>
+            <button id="downloadBtn">Download Result</button>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About This Quiz</h2>
+            <p>This website helps students test their knowledge
+               through an interactive quiz.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Technologies Assignment 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
